@@ -146,6 +146,7 @@ func TestTools_UploadOneFile(t *testing.T) {
 	_ = os.Remove(fmt.Sprintf("./"))
 }
 
+// TestTools_CreatDirIfNotExist test functionality by creating and then removing a test directory
 func TestTools_CreatDirIfNotExist(t *testing.T) {
 	var testTool Tools
 	err := testTool.CreateDirIfNotExist("./testdata/myDir")
